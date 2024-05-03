@@ -10,7 +10,9 @@ function shortcut(s1, s2) {
     const initial2 = s2.charAt(0).toUpperCase();
 
     // Concatenate the initial letters and return
-    return initial1 + initial2;
+    // return initial1 + initial2;
+	    return (initial1 + initial2).toLowerCase();
+
 }
 
 // Do not change the code below.
