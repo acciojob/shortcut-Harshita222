@@ -1,19 +1,29 @@
 function shortcut(s1, s2) {
-  // your code here
-	 // Check if either of the strings is empty
+    // Check if either of the strings is empty
     if (s1.length === 0 || s2.length === 0) {
         return '';
     }
 
-    // Extract the initial letters of the strings and convert to uppercase
-    const initial1 = s1.charAt(0).toUpperCase();
-    const initial2 = s2.charAt(0).toUpperCase();
+    // Initialize an empty string to store the initials
+    let initials = '';
 
-    // Concatenate the initial letters and return
-    // return initial1 + initial2;
-	    return (initial1 + initial2).toUpperCase();
+    // Loop through the characters of s1 and s2
+    for (let i = 0; i < 2; i++) {
+        let currentString = (i === 0) ? s1 : s2; // Determine current string
+        if (currentString.length > 0) {
+            initials += currentString[0].toUpperCase(); // Append the initial letter in uppercase
+        }
+    }
 
+    // Return the concatenated initials
+    return initials;
 }
+
+// // Sample usage:
+// const s1 = "Amnesty";
+// const s2 = "International";
+// console.log(shortcut(s1, s2)); // Output: AI
+
 
 // Do not change the code below.
 const s1 = prompt("Enter s1:");
