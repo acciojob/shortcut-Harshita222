@@ -11,7 +11,7 @@ function shortcut(s1, s2) {
 
     // Concatenate the initial letters and return
     // return initial1 + initial2;
-	    return (initial1 + initial2).toLowerCase();
+	    return (initial1 + initial2).toUpperCase();
 
 }
 
